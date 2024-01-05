@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26BD3ADE2B375816004866D0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26BD3ADD2B375816004866D0 /* main.cpp */; };
+		26EC6DAC2B478D1F008E17A8 /* morse_translator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26EC6DAA2B478D1F008E17A8 /* morse_translator.cpp */; };
+		26EC6DAE2B478F21008E17A8 /* source.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26EC6DAD2B478F21008E17A8 /* source.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		26BD3ADA2B375816004866D0 /* translator_morse */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = translator_morse; sourceTree = BUILT_PRODUCTS_DIR; };
-		26BD3ADD2B375816004866D0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		26EC6DAA2B478D1F008E17A8 /* morse_translator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = morse_translator.cpp; sourceTree = "<group>"; };
+		26EC6DAB2B478D1F008E17A8 /* morse_translator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = morse_translator.hpp; sourceTree = "<group>"; };
+		26EC6DAD2B478F21008E17A8 /* source.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = source.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +60,27 @@
 		26BD3ADC2B375816004866D0 /* translator_morse */ = {
 			isa = PBXGroup;
 			children = (
-				26BD3ADD2B375816004866D0 /* main.cpp */,
+				26EC6DA42B47890D008E17A8 /* headers */,
+				26EC6DA32B4788E9008E17A8 /* source */,
 			);
 			path = translator_morse;
+			sourceTree = "<group>";
+		};
+		26EC6DA32B4788E9008E17A8 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				26EC6DAA2B478D1F008E17A8 /* morse_translator.cpp */,
+				26EC6DAD2B478F21008E17A8 /* source.cpp */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		26EC6DA42B47890D008E17A8 /* headers */ = {
+			isa = PBXGroup;
+			children = (
+				26EC6DAB2B478D1F008E17A8 /* morse_translator.hpp */,
+			);
+			path = headers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +140,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26BD3ADE2B375816004866D0 /* main.cpp in Sources */,
+				26EC6DAE2B478F21008E17A8 /* source.cpp in Sources */,
+				26EC6DAC2B478D1F008E17A8 /* morse_translator.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
